@@ -1,3 +1,4 @@
+import 'package:app_coffee_shop/constants/app_constants_index.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
@@ -5,6 +6,11 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      color: ColorManager.background,
+      child: Center(
+        child: ImageAssets.cupOfCoffee,
+      ),
+    );
   }
 }
