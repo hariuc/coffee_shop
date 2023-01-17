@@ -2,6 +2,7 @@ library app_constants_index;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gif_view/gif_view.dart';
 
 part 'resources/color_manager.dart';
 

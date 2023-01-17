@@ -9,7 +9,7 @@ class SplashPage extends StatelessWidget {
     return Container(
       color: ColorManager.background,
       child: Center(
-        child: ImageAssets.cupOfCoffee,
+        child: ImageAssets.cupOfCoffeeGif,
       ),
     );
   }
