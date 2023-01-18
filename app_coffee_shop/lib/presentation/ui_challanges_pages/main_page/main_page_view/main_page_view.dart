@@ -14,24 +14,26 @@ class MainPageView extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: AppPadding.p16),
         child: Column(
-          children: _createColumnList(),
+          children: _createColumnList(context: context),
         ),
       ),
     ));
   }
 
-  List<Widget> _createColumnList() {
+  List<Widget> _createColumnList({required BuildContext context}) {
     final list = <Widget>[];
     list
       ..add(const SizedBox(
         height: AppSize.s100,
       ))
       ..add(const LogoFlutterUIChallenge())
-      ..add(SizedBox(
-        height: AppSize.s100,
+      ..add(const SizedBox(
+        height: AppSize.s16,
       ))
       ..add(AboutButton(
-        callback: () {},
+        callback: () {
+          Navigator.pushNamed(context, "aboutPage");
+        },
       ));
     return list;
   }

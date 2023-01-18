@@ -10,7 +10,7 @@ class LogoFlutterUIChallenge extends StatelessWidget {
     return RoundedContainer(
       borderRadius: BorderRadius.circular(AppSize.s10),
       padding: const EdgeInsets.all(AppSize.s0),
-      height: 250,
+      height: 230,
       child: Column(
         children: [
           ClipRRect(
@@ -21,37 +21,37 @@ class LogoFlutterUIChallenge extends StatelessWidget {
           const SizedBox(
             height: AppSize.s10,
           ),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            //mainAxisSize: MainAxisSize.min,
-            children: const [
-              Text(
-                "UI Challenges",
-                style: TextStyle(fontSize: FontSize.s20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                width: AppSize.s10,
-              ),
-              Icon(
-                Icons.arrow_forward,
-                color: ColorManager.red400,
-              ),
-              const SizedBox(
-                height: AppSize.s10,
-              ),
-            ],
+          Expanded(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              //mainAxisSize: MainAxisSize.min,
+              children: const [
+                Text(
+                  "UI Challenges",
+                  style: TextStyle(
+                      fontSize: FontSize.s20,
+                      fontWeight: FontWeight.bold,
+                      color: ColorManager.red400),
+                ),
+                SizedBox(
+                  width: AppSize.s10,
+                ),
+                Icon(
+                  Icons.arrow_forward,
+                  color: ColorManager.red400,
+                ),
+                SizedBox(
+                  height: AppSize.s10,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: AppSize.s10,
           ),
         ],
       ),
     );
-    // return Container(
-    //   decoration: const BoxDecoration(
-    //       // borderRadius: BorderRadius.only(
-    //       //     topLeft: Radius.circular(AppSize.s17), topRight: Radius.circular(AppSize.s17))),
-    //       borderRadius: BorderRadius.all(Radius.circular(AppSize.s17))),
-    //   //child: ImageAssets.flutterUIChallengesLogo,
-    //   child: Text("Hello"),
-    // );
   }
 }
