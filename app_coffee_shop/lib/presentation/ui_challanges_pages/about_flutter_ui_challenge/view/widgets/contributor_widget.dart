@@ -2,7 +2,9 @@ import 'package:app_coffee_shop/constants/app_constants_index.dart';
 import 'package:flutter/material.dart';
 
 class ContributorWidget extends StatelessWidget {
-  const ContributorWidget({Key? key}) : super(key: key);
+  final VoidCallback callback;
+
+  const ContributorWidget({Key? key, required this.callback}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,7 @@ class ContributorWidget extends StatelessWidget {
         padding: const EdgeInsets.all(AppPadding.p8),
         color: ColorManager.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSize.s8)),
-        onPressed: () {},
+        onPressed: callback,
         child: Row(
           children: [
             const SizedBox(

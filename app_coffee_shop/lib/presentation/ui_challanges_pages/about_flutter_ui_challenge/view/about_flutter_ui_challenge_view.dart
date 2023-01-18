@@ -15,10 +15,28 @@ class AboutFlutterUIChallengeView extends StatelessWidget {
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: AppSize.s16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const ContributorWidget(),
-            const ContributorWidget(),
-            const ContributorWidget(),
+            const SizedBox(
+              height: AppSize.s20,
+            ),
+            const Text(
+              "Contributors",
+              style: TextStyle(
+                  fontSize: FontSize.s20, fontWeight: FontWeight.bold, color: ColorManager.red400),
+            ),
+            const SizedBox(
+              height: AppSize.s12,
+            ),
+            ContributorWidget(
+              callback: () {},
+            ),
+            ContributorWidget(
+              callback: () {},
+            ),
+            ContributorWidget(
+              callback: () {},
+            ),
           ],
         ),
       ),
