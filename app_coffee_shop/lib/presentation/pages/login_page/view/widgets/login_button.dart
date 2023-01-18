@@ -11,10 +11,10 @@ class LoginButton extends StatelessWidget {
       height: 54,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(AppSize.s17)),
-        gradient: LinearGradient(
-            begin: Alignment.bottomRight,
-            end: Alignment.bottomLeft,
-            colors: [ColorManager.backgroundLoginButton1, ColorManager.backgroundLoginButton2]),
+        gradient: LinearGradient(begin: Alignment.bottomRight, end: Alignment.bottomLeft, colors: [
+          ColorManager.backgroundLoginButton2,
+          ColorManager.backgroundLoginButton1,
+        ]),
       ),
       child: const Center(
         child: Text(
