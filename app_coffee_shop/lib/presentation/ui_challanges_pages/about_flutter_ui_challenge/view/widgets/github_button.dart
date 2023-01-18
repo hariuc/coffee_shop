@@ -1,10 +1,10 @@
 import 'package:app_coffee_shop/constants/app_constants_index.dart';
 import 'package:flutter/material.dart';
 
-class YoutubeButton extends StatelessWidget {
+class GithubButton extends StatelessWidget {
   final VoidCallback callback;
 
-  const YoutubeButton({Key? key, required this.callback}) : super(key: key);
+  const GithubButton({Key? key, required this.callback}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class YoutubeButton extends StatelessWidget {
           Row(
             children: [
               Icon(
-                Icons.ac_unit,
+                Icons.access_alarm,
                 color: ColorManager.red400,
                 size: AppSize.s20,
               ),
@@ -26,7 +26,7 @@ class YoutubeButton extends StatelessWidget {
                 width: AppSize.s10,
               ),
               Text(
-                "Youtube",
+                "Github",
                 style: TextStyle(
                     color: ColorManager.red400,
                     fontSize: FontSize.s20,
@@ -37,8 +37,7 @@ class YoutubeButton extends StatelessWidget {
           const SizedBox(
             height: AppSize.s10,
           ),
-          const Text(
-              "Subscribe our youtube channel to see us build some of these UIs as well as other flutter tutorials and resources.")
+          const Text("Find codes to all the UIs in our github repository.")
         ],
       ),
     );
